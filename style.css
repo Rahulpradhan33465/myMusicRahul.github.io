@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid black;
+    background-color: rgb(241, 241, 241);
+    height: 100vh;
+}
+.box{
+    /* border: 2px solid black; */
+    height: 81vh;
+    width: 435px;
+    margin: 50px auto;
+    border-radius: 4%;
+    background-color: white;
+    box-shadow: 0px 1.2rem 3rem 0.5rem #867d7d;
+}
+.details{
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-transform:capitalize;
+
+}
+h1{
+    /* text-shadow: 1px 1px 3.5px #867d7d;
+     */
+     text-shadow: 0 0.3rem 0.5rem #867d7d;
+}
+.song{
+margin: 5px;
+padding: 3px;
+}
+.singer{
+    color: rgb(160, 155, 155);
+    margin: 5px;
+padding: 3px;
+}
+.image{
+    height: 273px;
+    width: 268px;
+    
+    border-radius: 100%;
+    margin: 30px auto;
+    /* border: 2px solid red; */
+   overflow: hidden;
+    box-shadow: 0px 0.7rem 2rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+.img{
+    height: 273px;
+    width: 268px;
+    
+    border-radius: 100%;
+}
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fas{
+    margin: 20px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+    border-radius: 100%;
+}
+ 
+ .fas:hover{
+   color: white;
+    background-color: black;
+        
+}
+.fas:active{
+    color: black;
+    background-color: white;
+}
+.animation{
+    animation: rotateAni 4s linear infinite;
+}
+@keyframes rotateAni {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* progress bar styling */
+.progress_container{
+padding: 1rem 0;
+margin-top: 1rem;
+height:auto ;
+width: 100%;
+}
+.progress_div{
+        /* border: 1px solid black; */
+        margin: 0.5rem auto;
+        width: 100%;
+        margin-bottom: 0px;
+        padding: -14px;
+        height: 0.4rem;
+        width: 90%;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 7%), 0 4px 8px rgb(0 0 0 / 7%), 0 8px 16px rgb(0 0 0 / 7%), 0 16px 32px rgb(0 0 0 / 7%), 0 32px 64px rgb(0 0 0 / 7%);
+        border-radius: 4rem;
+        position: relative;
+        margin-top: 0.5rem;
+        transition: width 0.5s linear;
+        cursor: pointer;
+        appearance: none;
+
+}
+.progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(20, 22, 22);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 7%), 0 4px 8px rgb(0 0 0 / 7%), 0 8px 16px rgb(0 0 0 / 7%), 0 16px 32px rgb(0 0 0 / 7%), 0 32px 64px rgb(0 0 0 / 7%);
+    border-radius: 4rem;
+    position: relative;
+    margin-top: 0.5rem;
+    transition: width 0.5s linear;
+    cursor: pointer;
+    appearance: none;
+}
+.progress_duration_meter{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    font-size: 15px;
+    /* font-weight: bolder; */
+}

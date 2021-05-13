@@ -1,0 +1,38 @@
+@media only screen and (max-width: 600px) {
+    .box {
+        /* border: 2px solid black; */
+        height: 80vh;
+        width: 341px;
+        margin: 50px auto;
+        border-radius: 4%;
+        background-color: white;
+        box-shadow: 0px 1.2rem 3rem 0.5rem #867d7d;
+    }
+    .img {
+        height: 217px;
+        width: 210px;
+        border-radius: 50%;
+    }
+    .image {
+        height: 217px;
+        width: 210px;
+        margin: 30px auto;
+        /* border: 2px solid red; */
+        border-radius: 50%;
+        box-shadow: 0px 0.7rem 2rem 0.5rem rgb(0 0 0 / 40%);
+    }
+    .song {
+        margin: 5px;
+        padding: 3px;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+ 
+.singer {
+    color: rgb(160, 155, 155);
+    margin: 5px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+  }
